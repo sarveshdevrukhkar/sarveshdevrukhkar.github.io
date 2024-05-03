@@ -1,8 +1,9 @@
 const dynamicText = document.querySelector("#about-tagline");
 const words = [
-  "I am a MERN Stack Developer.",
-  "Passionate Programmer.",
-  "I like to contribute into Open Source.",
+  " Java (DSA) | MERN Developer | Django | Open Contributor ",
+  " I am a MERN Stack Developer. ",
+  " A Passionate Programmer. ",
+  " also, I like to contribute into Open Source. ",
 ];
 
 // Variables to track the position and deletion status of the word

@@ -32,7 +32,7 @@ nav {
 #navbar-name:hover {
   text-shadow: 0 0 1rem yellow;
   background-color: black;
-  border-radius: 50%;
+  border-radius: 0.25rem;
   color: yellow;
 }
 
@@ -60,16 +60,20 @@ nav {
 
 .menu a {
   text-decoration: none;
-  margin: 0 1rem;
+  margin: 0;
   color: white;
   font-weight: bold;
   font-size: 3vmin;
   background-color: transparent;
   transition: 0.25s ease-in-out;
   font-family: "Lucida Sans";
+  transition: 0.5s ease-in-out;
+  padding: 0.25rem 1rem;
 }
 
 .menu a:hover {
   text-shadow: 0 0 1rem yellow;
   color: yellow;
+  background-color: black;
+  border-radius: 0.25rem;
 }

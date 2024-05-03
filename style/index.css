@@ -1,13 +1,23 @@
 :root {
   /* For Light Theme  */
   --light-primary-color: white;
+  --light-secondary-color: whitesmoke;
+  --light-main-section-bgcolor: #b13cff;
+  --light-content-container-bgcolor: #451c5c;
+  --light-resume-btn-on-hover-bgcolor: #a200ff;
+  --light-on-hover-card-bgcolor: #b13cffd7;
 
   /* For Dark Theme  */
-  --dark-primary-color: black;
+  --dark-primary-txt-color: black;
 }
 
 [data-theme="light"] {
   --primary-color: var(--light-primary-color);
+  --secondary-color: var(--light-secondary-color);
+  --main-section-bgcolor: var(--light-main-section-bgcolor);
+  --container-bgcolor: var(--light-content-container-bgcolor);
+  --resume-btn-on-hover-bgcolor: var(--light-resume-btn-on-hover-bgcolor);
+  --on-hover-card-bgcolor: var(--light-on-hover-card-bgcolor);
 }
 
 [data-theme="dark"] {
@@ -48,26 +58,35 @@ main {
   width: 95%;
   height: 95%;
   border-radius: 1dvw;
-  background-color: #3e065f;
+  background-color: #451c5c;
   box-shadow: inset 0 0 2rem black;
 }
 
 .profile-pic-container {
-  background-color: #150050;
   margin: 0 2rem;
   width: fit-content;
+  height: 60vmin;
   border-radius: 50%;
-  box-shadow: 0 0 1.5rem white;
+  box-shadow: 0 0 1.25rem white;
   transition: 1s ease-in-out;
+  animation: blink-pic 5s infinite ease-in-out;
 }
 
-.profile-pic-container:hover {
-  box-shadow: 0 0 1.5rem yellow;
-  scale: 1.1;
+@keyframes blink-pic {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+    box-shadow: 0 0 0.75rem yellow;
+  }
+  100% {
+    scale: 1;
+  }
 }
 
 #profile-pic {
-  height: 70vmin;
+  height: 60vmin;
 }
 
 .about-info {
@@ -169,10 +188,9 @@ main {
 
 #resume-btn:hover {
   color: white;
-  background-color: #150050;
+  background-color: #a200ff;
   border: 0.25rem solid white;
-  text-shadow: 0 0 1rem yellow;
-  box-shadow: 0 0 1.25rem yellow;
+  box-shadow: 0 0 1rem yellow;
 }
 
 .fa-arrow-up-right-from-square {

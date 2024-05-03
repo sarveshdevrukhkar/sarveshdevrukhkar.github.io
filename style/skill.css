@@ -42,7 +42,7 @@
 .skill-card:hover {
   box-shadow: 0 0 2.5rem white;
   scale: 1.1;
-    rotate: 360deg;
+  background-color:#8e05c2;
 }
 
 .skill-card-header {

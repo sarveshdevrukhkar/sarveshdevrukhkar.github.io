@@ -24,6 +24,7 @@
   justify-content: space-evenly;
   align-items: center;
   background-color: #3e065f;
+    background-color: #451c5c;
   margin: 0 2.5dvw;
   padding: 5dvh 0;
   border-radius: 1dvw;
@@ -32,7 +33,8 @@
 
 .project-card {
   color: white;
-  background-color: #8e05c2;
+  background-color: #3e065f;
+    background-color: #451c5c;
   width: 80%;
   border-radius: 1dvw;
   box-shadow: 0 0 1rem black;
@@ -41,12 +43,15 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   transition: 1s ease-in-out;
   margin: 5dvh 0;
+  border: 0.01rem solid white;
 }
 
 .project-card:hover {
-  background-color: #3e065f;
+    background-color: #8e05c2;
+  background-color: #b13cffd7;
+
   border: 0.25rem solid white;
-  box-shadow: inset 0 0 1rem white;
+  box-shadow: inset 0 0 0.5rem white;
   scale: 1.1;
 }
 
