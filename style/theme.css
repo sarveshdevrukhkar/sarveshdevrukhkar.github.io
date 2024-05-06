@@ -1,0 +1,47 @@
+:root {
+  /* For Light Theme */
+  --light-primary-color: white;
+  --light-secondary-color: whitesmoke;
+  --light-main-section-bgcolor: #b13cff;
+  --light-content-container-bgcolor: #451c5c;
+  --light-resume-btn-on-hover-bgcolor: #a200ff;
+  --light-on-hover-card-bgcolor: #b13cffd7;
+  --light-txt-shadow-color: yellow;
+
+  /* For Dark Theme */
+  --dark-primary-color: white;
+  --dark-secondary-color: whitesmoke;
+  --dark-main-section-bgcolor: #1c1c1c;
+  --dark-content-container-bgcolor: #26003b;
+  --dark-resume-btn-on-hover-bgcolor: #2b0144;
+  --dark-on-hover-card-bgcolor: #35134cd7;
+  --dark-txt-shadow-color: rgb(0, 255, 255);
+
+  /* --dark-primary-color: black;
+  --dark-secondary-color: #303030;
+  --dark-main-section-bgcolor: #b13cff;
+  --dark-content-container-bgcolor: #451c5c;
+  --dark-resume-btn-on-hover-bgcolor: #a200ff;
+  --dark-on-hover-card-bgcolor: #b13cffd7;
+  --dark-txt-shadow-color: yellow; */
+}
+
+[data-theme="light"] {
+  --primary-color: var(--light-primary-color);
+  --secondary-color: var(--light-secondary-color);
+  --main-section-bgcolor: var(--light-main-section-bgcolor);
+  --container-bgcolor: var(--light-content-container-bgcolor);
+  --resume-btn-on-hover-bgcolor: var(--light-resume-btn-on-hover-bgcolor);
+  --on-hover-card-bgcolor: var(--light-on-hover-card-bgcolor);
+  --txt-shadow-color: var(--light-txt-shadow-color);
+}
+
+[data-theme="dark"] {
+  --primary-color: var(--dark-primary-color);
+  --secondary-color: var(--dark-secondary-color);
+  --main-section-bgcolor: var(--dark-main-section-bgcolor);
+  --container-bgcolor: var(--dark-content-container-bgcolor);
+  --resume-btn-on-hover-bgcolor: var(--dark-resume-btn-on-hover-bgcolor);
+  --on-hover-card-bgcolor: var(--dark-on-hover-card-bgcolor);
+  --txt-shadow-color: var(--dark-txt-shadow-color);
+}

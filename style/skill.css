@@ -1,6 +1,6 @@
 #skills {
   box-sizing: border-box;
-  background-color: #b13cff;
+  background-color: var(--main-section-bgcolor);
 }
 
 .skill-header {
@@ -10,11 +10,11 @@
   padding-bottom: 2rem;
   text-decoration: underline black;
   font-weight: 800;
-  color: white;
+  color: var(--primary-color);
 }
 
 .skill-header:hover {
-  text-shadow: 0 0 1rem yellow;
+  text-shadow: 0 0 1rem var(--txt-shadow-color);
 }
 
 #skill-card-container {
@@ -22,7 +22,7 @@
   justify-content: space-around;
   align-items: baseline;
   flex-wrap: wrap;
-  background-color: #3e065f;
+  background-color: var(--container-bgcolor);
   margin: 0 2.5dvw;
   padding: 5dvh 0;
   border-radius: 1dvw;
@@ -33,23 +33,23 @@
   width: 25%;
   border-radius: 0.5rem;
   margin: 1rem;
-  background-color: #3a0059;
-  border: 0.1rem solid white;
-  box-shadow: 0 0 0.5rem white;
+  background-color: var(--container-bgcolor);
+  border: 0.1rem solid var(--primary-color);
+  box-shadow: 0 0 0.5rem var(--primary-color);
   transition: 1s ease-in-out;
 }
 
 .skill-card:hover {
-  box-shadow: 0 0 2.5rem white;
+  box-shadow: 0 0 2.5rem var(--primary-color);
   scale: 1.1;
-  background-color:#8e05c2;
+  background-color: var(--on-hover-card-bgcolor);
 }
 
 .skill-card-header {
   margin: 0;
   font-size: 5dvh;
   text-align: center;
-  color: white;
+  color: var(--primary-color);
   line-height: 1.5;
   padding: 0.5rem;
   border-radius: 0.5rem 0.5rem 0 0;
@@ -59,7 +59,7 @@
   margin: 0.5rem 0;
   font-size: medium;
   margin: 0.5rem;
-  color: white;
+  color: var(--primary-color);
   line-height: 1.5;
   padding-left: 2rem;
 }
