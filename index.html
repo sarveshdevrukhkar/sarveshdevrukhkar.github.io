@@ -45,6 +45,10 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <button id="mode-btn">
+                    <img src="./assets/svg/dark_mode_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="dark mode"
+                        class="theme-icons">
+                </button>
             </ul>
         </nav>
     </header>
@@ -57,7 +61,7 @@
                     <img src="https://avatars.githubusercontent.com/u/79737447" alt="Profile Photo" id="profile-pic" />
                 </section>
                 <section class="about-info">
-                    <div id="txt-hello">Hello there!<img src="./assets/gifs/hi.gif" alt=""></div>
+                    <div id="txt-hello">Hello there!<img src="./assets/gif/hi.gif" alt=""></div>
                     <div id="txt-iam"> I'm,</div>
                     <div id="txt-name">Sarvesh Devrukhakar.</div>
                     <h3>&nbsp;<span id="about-tagline"></span></h3>
@@ -68,7 +72,9 @@
                         <a href="http://github.com/sad0xer" target="_blank">
                             <i class="fa-brands fa-github about-icon"></i></a>
                     </section>
-                    <button id="resume-btn">Resume<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    <a href="https://drive.google.com/file/d/1_WMiiUNMpT1huB5jqc64itdNifQ_tfS1/view?usp=drive_link"
+                        target="_blank" rel="noopener noreferrer"><button id="resume-btn">Resume<i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
                 </section>
             </section>
         </div>
@@ -137,7 +143,7 @@
                     <h1 id="project-name">Villa</h1>
                     <section class="project-card-body">
                         <section id="project-demo-container">
-                            <img src="./assets/gifs/Villa.gif" alt="Project Demo GIF" class="demo-gif">
+                            <img src="./assets/gif/Villa.gif" alt="Project Demo GIF" class="demo-gif">
                         </section>
                         <section class="project-info">
                             <p class="project-desc">The Villa, it is a landing page, which is designed to attract
@@ -173,7 +179,7 @@
                     <h1 id="project-name">Book-Train-Ticket</h1>
                     <section class="project-card-body">
                         <section id="project-demo-container">
-                            <img src="./assets/gifs/Book-Train-Ticket.gif" alt="Project Demo GIF" class="demo-gif">
+                            <img src="./assets/gif/Book-Train-Ticket.gif" alt="Project Demo GIF" class="demo-gif">
                         </section>
                         <section class="project-info">
                             <p class="project-desc">This is a simple Train Ticket Booking System web application. The
@@ -213,7 +219,7 @@
                     <h1 id="project-name">E-Com-LocalStorage</h1>
                     <section class="project-card-body">
                         <section id="project-demo-container">
-                            <img src="./assets/gifs/E-Com-LocalStorage.gif" alt="Project Demo GIF" class="demo-gif">
+                            <img src="./assets/gif/E-Com-LocalStorage.gif" alt="Project Demo GIF" class="demo-gif">
                         </section>
                         <section class="project-info">
                             <p class="project-desc">It is a simple E-Commerce website developed using HTML, CSS,
@@ -275,6 +281,12 @@
                 <div class="social-handle">
                     <i class="fa-solid fa-location-dot contact-icon"></i>Mumbai, Maharashtra, India.
                 </div>
+
+                <div class="social-handle">
+                    <a class="linkedIn-follow-btn"
+                        href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=sarveshdevrukhakar"
+                        target="_blank">Follow on LinkedIn</a>
+                </div>
             </div>
         </section>
     </main>
@@ -290,17 +302,6 @@
     <script src="./script/skill.js" defer></script>
     <script src="./script/project.js" defer></script>
     <script src="./script/contact.js" defer></script>
-    <!-- <script>
-        const htmlElement = document.querySelector('html');
-        document.addEventListener("click", toggleTheme)
-
-        function toggleTheme() {
-            let theme = htmlElement.getAttribute("data-theme");
-
-            let newTheme = theme === "light" ? "dark" : "light"
-            htmlElement.setAttribute("data-theme", newTheme);
-        }
-    </script> -->
 </body>
 
 </html>

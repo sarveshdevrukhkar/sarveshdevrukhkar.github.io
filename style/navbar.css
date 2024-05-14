@@ -2,12 +2,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
-  background-color: var(--main-section-bgcolor);
-  color: var(--primary-color);
+  height: 3rem;
   text-align: center;
   width: auto;
   box-sizing: border-box;
+  box-shadow: inset 0 0 1rem black;
 }
 
 .img-name-container {
@@ -56,6 +55,7 @@ nav {
   display: flex;
   list-style: none;
   margin-right: 2rem;
+  align-items: center;
 }
 
 .menu a {
@@ -76,4 +76,18 @@ nav {
   color: var(--txt-shadow-color);
   background-color: black;
   border-radius: 0.25rem;
+}
+
+#mode-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.dark-mode {
+  color: black;
+  background-color: blue;
 }

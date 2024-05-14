@@ -1,9 +1,9 @@
+/* About Tagline */
 const dynamicText = document.querySelector("#about-tagline");
 const words = [
-  " Java (DSA) | MERN Developer | Django | Open Contributor ",
-  " I am a MERN Stack Developer. ",
-  " A Passionate Programmer. ",
-  " also, I like to contribute into Open Source. ",
+  " A MERN Stack Developer.",
+  " A Passionate Programmer.",
+  " An Open Source Contributor.",
 ];
 
 // Variables to track the position and deletion status of the word
@@ -24,7 +24,7 @@ const typeEffect = () => {
   } else if (isDeleting && charIndex > 0) {
     // If condition is true, remove the previous character
     charIndex--;
-    setTimeout(typeEffect, 50);
+    setTimeout(typeEffect, 25);
   } else {
     // If word is deleted then switch to the next word
     isDeleting = !isDeleting;

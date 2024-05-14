@@ -35,12 +35,12 @@
   margin: 1rem;
   background-color: var(--container-bgcolor);
   border: 0.1rem solid var(--primary-color);
-  box-shadow: 0 0 0.5rem var(--primary-color);
+  box-shadow: 0 0 2rem black;
   transition: 1s ease-in-out;
 }
 
 .skill-card:hover {
-  box-shadow: 0 0 2.5rem var(--primary-color);
+  box-shadow: 0 0 1rem var(--primary-color);
   scale: 1.1;
   background-color: var(--on-hover-card-bgcolor);
 }

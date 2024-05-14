@@ -7,6 +7,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--main-body-bgclr);
 }
 
 main {
@@ -19,21 +20,19 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-section-bgcolor);
 }
 
 .about-me-container {
   display: flex;
   align-items: center;
   text-align: left;
-  color: var(--primary-color);
   line-height: 1.5em;
   position: relative;
   width: 95%;
   height: 95%;
   border-radius: 1dvw;
-  background-color: var(--container-bgcolor);
-  box-shadow: inset 0 0 2rem black;
+  background-color: var(--container-bgclr);
+  box-shadow: inset 0 0 2rem var(--inset-boxShadow-clr);
 }
 
 .profile-pic-container {
@@ -51,10 +50,12 @@ main {
     scale: 1;
     box-shadow: 0 0 0.5rem var(--primary-color);
   }
+
   50% {
     scale: 1.1;
     box-shadow: 0 0 1rem var(--txt-shadow-color);
   }
+
   100% {
     scale: 1;
     box-shadow: 0 0 0.5rem var(--primary-color);
@@ -158,15 +159,23 @@ main {
   border-radius: 0.5rem;
   background-color: var(--secondary-color);
   color: black;
-  transition: 0.25s ease-in-out;
-  border: none;
+  border: 0.25rem solid white;
+  box-shadow: 0 0 1rem black;
 }
 
 #resume-btn:hover {
-  color: var(--primary-color);
+  color: white;
   background-color: var(--resume-btn-on-hover-bgcolor);
   border: 0.25rem solid var(--primary-color);
-  box-shadow: 0 0 1rem var(--txt-shadow-color);
+  box-shadow: inset 0 0 1rem black;
+}
+
+#resume-btn:active {
+  background-color: white;
+  scale: 0.95;
+  color: black;
+  border: none;
+  box-shadow: none;
 }
 
 .fa-arrow-up-right-from-square {
@@ -193,19 +202,11 @@ main {
 }
 
 @keyframes goToTop {
-  0% {
+  from {
     opacity: 0;
   }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
+
+  to {
     opacity: 1;
   }
 }
@@ -228,8 +229,7 @@ main {
 footer {
   text-align: center;
   background-color: var(--container-bgcolor);
-  font-weight: bolder;
-  font-size: large;
+  font-size: small;
   font-family: monospace;
   line-height: 3;
   box-shadow: inset 0 0 1rem black;
