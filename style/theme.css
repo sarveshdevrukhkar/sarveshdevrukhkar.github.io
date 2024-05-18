@@ -1,20 +1,42 @@
 :root {
-  /* For Light Theme */
-  /* --light-primary-color: white;
-  --light-secondary-color: whitesmoke;
-  --light-main-section-bgcolor: #b13cff;
-  --light-content-container-bgcolor: #451c5c;
-  --light-resume-btn-on-hover-bgcolor: #a200ff;
-  --light-on-hover-card-bgcolor: #b13cffd7;
-  --light-txt-shadow-color: yellow; */
+  /* Global Variable */
+  --clr-primary-white: white;
+  --clr-secondary-white: #f5f5f5;
+  --clr-primary-black: black;
+  --clr-secondary-black: #333333;
+  --clr-yellow: yellow;
 
-  --light-main-body-bgclr: #ae52ff; /* main body background */
-  --light-container-bgclr: #5b0d85; /* section container bg color */
-  --light-secondary-txt-clr: #222222;
-  --light-txtShadow-clr: white;
-  --light-txtShadow-hover-clr: white;
-  --light-boxShadow-clr: white;
-  --light-inset-boxShadow-clr: black;
+  /* Light Theme Variable */
+  --light-main-body-bgclr: #b509ff;
+  --light-container-bgclr: #5b0d85;
+  --light-primary-txt-clr: var(--clr-primary-white);
+  --light-primary-txt-hover-clr: var(--clr-primary-black);
+  --light-secondary-txt-clr: var(--clr-secondary-white);
+  --light-txtShadow-clr: var(--clr-primary-white);
+  --light-txtShadow-hover-clr: var(--clr-yellow);
+  --light-boxShadow-clr: var(--clr-yellow);
+  --light-inset-boxShadow-clr: var(--clr-primary-black);
+
+  /* Navbar Section*/
+  /* --light-nav-logo-hover-clr: var(--clr-yellow);
+  --light-nav-name-txt-clr: var(--clr-primary-white);
+  --light-nav-name-txt-hover-clr: var(--clr-yellow);
+  --light-nav-munu-clr: var(--clr-primary-white);
+  --light-nav-munu-txtShadow-hover-clr: var(--clr-yellow);
+  --light-nav-munu-border-hover-clr: var(--clr-yellow);
+  --light-nav-theme-btn-bgclr: var(--clr-primary-black); */
+  /* About Section */
+  --light-abt-name-txt-hover-clr: var(--clr-yellow);
+  --light-abt-tagline-txt-clr: var(--clr-yellow);
+  --light-abt-tagline-blink-bar-clr: var(--clr-yellow);
+  --light-abt-social-icon-clr: var(--clr-secondary-white);
+  --light-abt-social-icon-hover-clr: var(--clr-primary-black);
+  --light-abt-social-icon-txtShadow-hover-clr: var(--clr-yellow);
+  /* Skills Section */
+  /* Project Section */
+  /* Contact Section */
+  /* Footer Section */
+
   --light-resume-btn-border-clr: white;
   --light-resume-btn-bgclr: white;
   --light-resume-btn-hover-bgclr: white;
@@ -51,37 +73,42 @@
   --on-hover-card-bgcolor: var(--light-on-hover-card-bgcolor);
   --txt-shadow-color: var(--light-txt-shadow-color); */
 
+  --primary-txt-clr: var(--light-primary-txt-clr);
+  --primary-txt-hover-clr: var(--light-primary-txt-hover-clr);
+  --secondary-txt-clr: var(--light-secondary-txt-clr);
+
+  --txtShadow-clr: var(--light-txtShadow-clr);
+  --txtShadow-hover-clr: var(--light-txtShadow-hover-clr);
+
   --main-body-bgclr: var(--light-main-body-bgclr);
   --container-bgclr: var(--light-container-bgclr);
-  --primary-txt-clr: white;
-  --secondary-txt-clr: white;
-  --txtShadow-clr: white;
-  --txtShadow-hover-clr: white;
-  --boxShadow-clr: white;
-  --inset-boxShadow-clr: var(--light-inset-boxShadow-clr);
-  --resume-btn-border-clr: white;
-  --resume-btn-bgclr: white;
-  --resume-btn-hover-bgclr: white;
-  --nav-name-bgclr: white;
-  --nav-name-hover-bgclr: white;
-  --nav-menu-bgclr: white
-  --nav-menu-hover-bgclr: white;
-  --social-icon-clr: white;
-  --social-icon-hover-clr: white;
-  --section-header-clr: white;
-  --section-header-hover-clr: white;
-  --project-btn-bgclr: white;
-  --project-card-bgclr: white;
-  --project-card-hover-bgclr: white;
-  --project-card-boxShadow-clr: white;
-}
 
-[data-theme="dark"] {
-  --primary-color: var(--dark-primary-color);
-  --secondary-color: var(--dark-secondary-color);
-  --main-section-bgcolor: var(--dark-main-section-bgcolor);
-  --container-bgcolor: var(--dark-content-container-bgcolor);
-  --resume-btn-on-hover-bgcolor: var(--dark-resume-btn-on-hover-bgcolor);
-  --on-hover-card-bgcolor: var(--dark-on-hover-card-bgcolor);
-  --txt-shadow-color: var(--dark-txt-shadow-color);
+  --boxShadow-clr: var(--light-boxShadow-clr);
+  --inset-boxShadow-clr: var(--light-inset-boxShadow-clr);
+
+  --resume-btn-border-clr: var(--light-resume-btn-border-clr);
+  --resume-btn-bgclr: var(--light-resume-btn-bgclr);
+  --resume-btn-hover-bgclr: var(--light-resume-btn-hover-bgclr);
+  --nav-name-bgclr: var(--light-nav-name-bgclr);
+  --nav-name-hover-bgclr: var(--light-nav-name-hover-bgclr);
+  --nav-menu-bgclr: var(--light-nav-menu-bgclr);
+  --nav-menu-hover-bgclr: var(--light-nav-menu-hover-bgclr);
+  --social-icon-clr: var(--light-social-icon-clr);
+  --social-icon-hover-clr: var(--light-social-icon-hover-clr);
+  --section-header-clr: var(--light-section-header-clr);
+  --section-header-hover-clr: var(--light-section-header-hover-clr);
+  --project-btn-bgclr: var(--light-project-btn-bgclr);
+  --project-card-bgclr: var(--light-project-card-bgclr);
+  --project-card-hover-bgclr: var(--light-project-card-hover-bgclr);
+  --project-card-boxShadow-clr: var(--light-project-card-boxShadow-clr);
+
+  [data-theme="dark"] {
+    --primary-color: var(--dark-primary-color);
+    --secondary-color: var(--dark-secondary-color);
+    --main-section-bgcolor: var(--dark-main-section-bgcolor);
+    --container-bgcolor: var(--dark-content-container-bgcolor);
+    --resume-btn-on-hover-bgcolor: var(--dark-resume-btn-on-hover-bgcolor);
+    --on-hover-card-bgcolor: var(--dark-on-hover-card-bgcolor);
+    --txt-shadow-color: var(--dark-txt-shadow-color);
+  }
 }

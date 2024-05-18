@@ -5,8 +5,8 @@ nav {
   height: 3rem;
   text-align: center;
   width: auto;
-  box-sizing: border-box;
-  box-shadow: inset 0 0 1rem black;
+  box-shadow: inset 0 0 1rem var(--inset-boxShadow-clr);
+  background-color: var(--container-bgclr);
 }
 
 .img-name-container {
@@ -32,62 +32,56 @@ nav {
 }
 
 .navbar-brand img:hover {
-  box-shadow: 0 0 1rem var(--txt-shadow-color);
-  border-color: black;
+  box-shadow: 0 0 1rem var(--txtShadow-hover-clr);
   scale: 1.15;
 }
 
 #navbar-name {
   text-decoration: none;
-  color: var(--primary-color);
-  font-family: "Lucida Sans";
+  color: var(--primary-txt-clr);
   transition: 0.5s ease-in-out;
 }
 
 #navbar-name:hover {
-  text-shadow: 0 0 1rem var(--txt-shadow-color);
-  background-color: black;
+  text-shadow: 0 0 1rem var(--txtShadow-hover-clr);
   border-radius: 0.25rem;
-  color: var(--txt-shadow-color);
+  scale: 1.05;
 }
 
 .menu {
   display: flex;
+  align-items: center;
+  justify-content: center;
   list-style: none;
   margin-right: 2rem;
-  align-items: center;
 }
 
 .menu a {
   text-decoration: none;
-  margin: 0;
-  color: var(--primary-color);
+  color: var(--primary-txt-clr);
   font-weight: bold;
   font-size: 3vmin;
-  background-color: transparent;
-  transition: 0.25s ease-in-out;
-  font-family: "Lucida Sans";
   transition: 0.5s ease-in-out;
   padding: 0.25rem 1rem;
+  margin: 0;
 }
 
 .menu a:hover {
-  text-shadow: 0 0 1rem var(--txt-shadow-color);
-  color: var(--txt-shadow-color);
-  background-color: black;
-  border-radius: 0.25rem;
+  text-shadow: 0 0 1rem var(--txtShadow-hover-clr);
+  border-radius: 0.5rem;
+  border: 0.01rem solid var(--txtShadow-hover-clr);
 }
 
 #mode-btn {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.dark-mode {
-  color: black;
-  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 1rem;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: black;
 }

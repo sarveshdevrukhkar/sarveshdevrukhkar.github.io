@@ -1,9 +1,9 @@
 /* About Tagline */
 const dynamicText = document.querySelector("#about-tagline");
 const words = [
-  " A MERN Stack Developer.",
-  " A Passionate Programmer.",
-  " An Open Source Contributor.",
+  "A MERN Stack Developer.",
+  "A Passionate Programmer.",
+  "An Open Source Contributor.",
 ];
 
 // Variables to track the position and deletion status of the word

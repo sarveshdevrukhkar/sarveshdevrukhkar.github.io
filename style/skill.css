@@ -1,20 +1,18 @@
 #skills {
-  box-sizing: border-box;
   background-color: var(--main-section-bgcolor);
 }
 
 .skill-header {
   text-align: center;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   margin: 0;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
   text-decoration: underline black;
-  font-weight: 800;
-  color: var(--primary-color);
+  font-weight: 900;
 }
 
 .skill-header:hover {
-  text-shadow: 0 0 1rem var(--txt-shadow-color);
+  text-shadow: 0 0 1rem var(--txtShadow-hover-clr);
 }
 
 #skill-card-container {
@@ -22,7 +20,7 @@
   justify-content: space-around;
   align-items: baseline;
   flex-wrap: wrap;
-  background-color: var(--container-bgcolor);
+  background-color: var(--container-bgclr);
   margin: 0 2.5dvw;
   padding: 5dvh 0;
   border-radius: 1dvw;
@@ -56,7 +54,6 @@
 }
 
 .skill-card ul {
-  margin: 0.5rem 0;
   font-size: medium;
   margin: 0.5rem;
   color: var(--primary-color);
