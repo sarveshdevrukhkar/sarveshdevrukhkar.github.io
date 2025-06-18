@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    text-align: center;
+    border: 1px solid #ccc;
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+
+        .logo {
+            width: 4rem;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-left: 1rem;
+        }
+    }
+
+    /* Navigation Items */
+    .nav-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+
+            > li {
+                margin: 0 2rem;
+            }
+        }
+    }
+}
