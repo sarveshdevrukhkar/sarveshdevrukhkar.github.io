@@ -1,0 +1,1 @@
+:root{font-family:Roboto,sans-serif,Playfair Display,serif}.header{display:flex;justify-content:center;padding:0 2rem;text-align:center;border:1px solid #ccc}.header .nav-items{display:flex;justify-content:center;align-items:center}.header .nav-items>ul{display:flex;list-style:none;padding:0}.header .nav-items>ul>li a{margin:0 2rem;font-weight:700;text-decoration:none;color:#fff}
