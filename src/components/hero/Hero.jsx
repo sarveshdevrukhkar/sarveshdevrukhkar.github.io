@@ -1,12 +1,11 @@
 import "./Hero.css";
-import heroImg from "../../assets/logo.png";
 
 export default function Hero() {
 	return (
 		<div id="hero">
 			{/* Hero Image */}
 			<div className="hero-img-box">
-				<img src={heroImg} alt="Hero Image" id="hero-img" />
+				<img src="logo.png" alt="Hero Image" id="hero-img" />
 			</div>
 			
 			{/* Hero Name */}
