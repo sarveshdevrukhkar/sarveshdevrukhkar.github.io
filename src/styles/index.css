@@ -4,5 +4,7 @@
 
 body {
   margin: 0;
-  color: black;
+  /* Light Theme Color */
+  color: #111111;
+  background-color: #eeeeee;
 }
