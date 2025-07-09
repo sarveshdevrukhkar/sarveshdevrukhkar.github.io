@@ -1,6 +1,7 @@
 /node_modules/
 /dist
 /.vite
+/.vscode
 
 # Temporarily Ignored
 NOTES.md
