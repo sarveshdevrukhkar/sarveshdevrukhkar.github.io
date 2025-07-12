@@ -8,13 +8,13 @@ import Service from "./components/pages/service/Service.jsx";
 
 export default function App() {
 	return (
-		<>
+		<div>
 			<Navbar />
 			<Hero />
 			<About />
 			<Skill />
 			<Project />
 			<Service />
-		</>
+		</div>
 	);
 }
