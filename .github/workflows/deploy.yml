@@ -2,13 +2,8 @@ name: Deploy My Portfolio React App to GitHub Pages.
 
 on:
     push:
-        branches: [main] # 👈 triggers on push to main
+        branches: main # 👈 triggers on push to main
 
-        # Optional: Rebuild only when these paths changes.
-        paths:
-            - "src/**"
-            - "public/**"
-            - "vite.config.js"
 jobs:
     build:
         runs-on: ubuntu-latest
