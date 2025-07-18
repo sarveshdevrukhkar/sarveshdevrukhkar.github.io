@@ -2,19 +2,19 @@ name: Deploy My Portfolio React App to GitHub Pages.
 
 on:
     push:
-        branches: main # triggers on push to main
+        branches: ["main"] # triggers on push to main
 
 jobs:
     build:
         runs-on: ubuntu-latest
         steps:
             - name: 📥 Checkout repository.
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: 🔧 Set up Node.js
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
               with:
-                  node-version: 18
+                  node-version: 22
 
             - name: 📦 Install dependencies.
               run: npm ci
