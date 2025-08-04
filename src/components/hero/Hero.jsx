@@ -8,7 +8,7 @@ import DownloadIcon from "../../assets/icons/download-solid.svg";
 // * Data Imports.
 import { URLs } from "../../data/constants.js"; // * URL Data Import.
 
-let { GITHUB_URL, LINKEDIN_URL, RESUME_URL } = URLs; // Destructuring Data of ease of use.
+let { GITHUB_URL, LINKEDIN_URL, FlowCV_RESUME_URL } = URLs; // Destructuring Data of ease of use.
 
 export default function Hero() {
 	return (
@@ -38,7 +38,7 @@ export default function Hero() {
 				</a>
 			</div>
 			<div>
-				<a href={RESUME_URL} target="_blank" rel="noopener noreferrer">
+				<a href={FlowCV_RESUME_URL} target="_blank" rel="noopener noreferrer">
 					<button className="download-resume-btn">
 						My Resume
 						<img src={DownloadIcon} alt="Download Icon" />

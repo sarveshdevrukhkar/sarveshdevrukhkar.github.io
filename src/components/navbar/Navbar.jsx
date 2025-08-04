@@ -1,14 +1,16 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
 	return (
 		<nav className="header">
 			<div className="nav-items">
 				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#skill">Skills</a></li>
-					<li><a href="#project">Projects</a></li>
-					<li><a href="#service">Services</a></li>
+					<li><Link to="/">Home</Link></li>
+					<li><Link to="/about">About</Link></li>
+					<li><Link to="/skill">Skills</Link></li>
+					<li><Link to="/project">Projects</Link></li>
+					<li><Link to="/service">Services</Link></li>
 				</ul>
 			</div>
 		</nav>

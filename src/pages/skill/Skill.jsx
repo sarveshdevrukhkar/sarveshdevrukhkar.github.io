@@ -1,4 +1,3 @@
-import "../../styles/App.css";
 import "./Skill.css";
 
 export default function Skill() {

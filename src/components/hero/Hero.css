@@ -8,10 +8,10 @@
     .hero-img-box {
         display: flex;
         justify-content: center;
-        margin-top: 1rem;
+        margin-top: 3rem;
 
         #hero-img {
-            width: 20dvw;
+            width: 15dvw;
             border-radius: 50%;
         }
     }
@@ -39,7 +39,7 @@
 
         img {
             width: 2rem;
-            margin: 1.25rem 1rem;
+            margin: 1.75rem 1.5rem;
             transition: all 0.75s ease-in-out;
 
             &:hover {
@@ -57,14 +57,13 @@
         font-size: 1.1rem;
         font-weight: 900;
         cursor: pointer;
-        border: 0.2rem solid #000000;
+        border: 0.1rem solid transparent;
         border-radius: 2rem;
         height: 4rem;
-        transition: all 0.75s ease-in-out;
+        box-shadow: 0 0 1rem 0.25rem #000000;
 
-        &:hover {
-            border-color: #ffffff;
-            box-shadow: 0 0 1rem 0.25rem #000000;
+        &:active {
+            box-shadow: 0 0 0 0 #000000;
         }
 
         img {
