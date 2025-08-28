@@ -1,23 +1,14 @@
+/* Common Component Styling. */
 .section-title {
     font-family: "Playfair Display";
     text-align: center;
-    padding: 2rem 0;
+    font-size: 2.25rem;
+    padding: 2rem 0 1rem;
     margin: 0;
 }
 
-.skill-container {
-    padding: 0 10rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-    .skill-card {
-        background-color: #000000;
-        color: #ffffff;
-        padding: 1rem;
-        margin: 0.5rem 1rem;
-        border-radius: 0.5rem;
-        font-weight: 500;
-        font-size: 1.25rem;
-    }
+.section-title-description {
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0 0 2rem;
 }
