@@ -61,7 +61,7 @@
             font-size: 1.25rem;
             font-weight: 900;
             cursor: pointer;
-            border: 0.1rem solid transparent;
+            border: none;
             border-radius: 2rem;
             box-shadow: 0 0 1rem 0.25rem #000000;
 

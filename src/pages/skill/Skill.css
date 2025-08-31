@@ -11,8 +11,8 @@
             width: 45%;
             margin: 1rem;
             border: 1px solid #000000;
-            border-radius: 0.5rem;
-            box-shadow: inset 0 0 1rem 0.5rem #000000;
+            border-radius: 0.75rem;
+            box-shadow: inset 0 0 0.5rem 0.1rem #000000;
             transition: 0.3s ease-in-out;
 
             .skill-card-header {

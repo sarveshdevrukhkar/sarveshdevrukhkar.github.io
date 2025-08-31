@@ -39,7 +39,7 @@ export default function Hero() {
 			</div>
 			<div className="resume-btn-box">
 				<a href={FlowCV_RESUME_URL} target="_blank" rel="noopener noreferrer">
-					<button className="download-resume-btn">
+					<button className="download-resume-btn" title="See and Download My Resume.">
 						My Resume
 						<img src={DownloadIcon} alt="Download Icon" />
 					</button>
