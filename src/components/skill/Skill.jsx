@@ -1,7 +1,7 @@
 import "../../styles/App.css";
 import "./Skill.css";
 
-import SkillCard from "./skillCard";
+import SkillCard from "./SkillCard";
 import { skillCard } from "../../data/skills";
 
 export default function Skill() {

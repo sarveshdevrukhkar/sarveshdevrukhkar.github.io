@@ -1,4 +1,4 @@
-import "./Hero.css";
+import "./Home.css";
 
 // * Icon Imports
 import GitHubIcon from "../../assets/icons/github-brands-circle.svg";
@@ -6,11 +6,11 @@ import LinkedinIcon from "../../assets/icons/linkedin-in-brands.svg";
 import DownloadIcon from "../../assets/icons/download-solid.svg";
 
 // * Data Imports.
-import { URLs } from "../../data/constants.js"; // * URL Data Import.
+import { URLs } from "../../data/constants"; // * URL Data Import.
 
 let { GITHUB_URL, LINKEDIN_URL, FlowCV_RESUME_URL } = URLs; // Destructuring Data of ease of use.
 
-export default function Hero() {
+export default function Home() {
 	return (
 		<div id="hero">
 			{/* Hero Image */}

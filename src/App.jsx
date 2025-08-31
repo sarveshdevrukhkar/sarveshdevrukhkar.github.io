@@ -1,16 +1,16 @@
 import "./styles/App.css";
-import Hero from "./components/hero/Hero.jsx";
-import Skill from './pages/skill/Skill.jsx';
-import Project from "./pages/project/Project.jsx";
-import Service from "./pages/service/Service.jsx";
+import Home from "./pages/home/Home.jsx";
+import Skill from "./components/skill/Skill.jsx";
+import Project from "./components/project/Project.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 export default function App() {
 	return (
 		<div>
-			<Hero />
+			<Home />
 			<Skill />
 			<Project />
-			<Service />
+			<Footer />
 		</div>
 	);
 }

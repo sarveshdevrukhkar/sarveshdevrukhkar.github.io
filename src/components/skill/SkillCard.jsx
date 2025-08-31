@@ -9,8 +9,10 @@ export default function skillCard(props) {
 				<h2>{title}</h2>
 			</div>
 			<div className="skill-card-body">
-				{skills.map((skill) => (
-					<span className="skill">{skill}</span>
+				{skills.map((skill, index) => (
+					<span className="skill" key={index}>
+						{skill}
+					</span>
 				))}
 			</div>
 		</div>

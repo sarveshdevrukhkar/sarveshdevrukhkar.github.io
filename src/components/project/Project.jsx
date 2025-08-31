@@ -1,8 +1,9 @@
 import "../../styles/App.css";
-import "../../components/project/Project.css";
+import "./Project.css";
 
-import ProjectCard from "../../components/project/ProjectCard";
-import { projectCards } from "../../data/projects";
+import ProjectCard from "./ProjectCard";
+import { homeProjectCards } from "../../data/projects";
+import { Link } from "react-router-dom";
 
 export default function Project() {
 	return (
@@ -13,9 +14,15 @@ export default function Project() {
 			</div>
 
 			<div className="project-card-container">
-				{projectCards.map((projectCard, index) => (
+				{homeProjectCards.map((projectCard, index) => (
 					<ProjectCard key={index} projectCardData={projectCard} />
 				))}
+			</div>
+
+			<div className="project-see-more">
+				<Link to="/project">
+					<button className="download-resume-btn">See more...</button>
+				</Link>
 			</div>
 		</div>
 	);

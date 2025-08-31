@@ -9,7 +9,7 @@ export default function ProjectCard(props) {
 	return (
 		<div className="project-card">
 			<div className="project-img">
-				<img src={live_URL} frameborder="0"></img>
+				<img src={live_URL} frameBorder="0"></img>
 			</div>
 			<div className="project-body">
 				<h2 className="project-name">{projectName}</h2>
