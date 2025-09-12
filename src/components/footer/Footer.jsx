@@ -1,5 +1,9 @@
 import "./Footer.css";
 
 export default function Footer() {
-	return <footer>Made with Passion by Developer for Developer.</footer>;
+	return (
+		<footer>
+			<small>Made with Passion ❤️ and Heart with Fire. ❤️‍🔥</small>
+		</footer>
+	);
 }
